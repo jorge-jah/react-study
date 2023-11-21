@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import { Sidebar } from "../components/Sidebar";
 import { Header } from "../components/Header";
 import { MainLayout } from "../layouts/MainLayout";
+import { DataTable } from "../components/Table";
+import Hooks from "../pages/Hooks";
 
 export const routes = createBrowserRouter([
     {
@@ -9,8 +11,16 @@ export const routes = createBrowserRouter([
         element: <MainLayout />,
         children: [
             {
-                path: "/home",
-                element: <h1>Olá</h1>
+                path: "/",
+                element: <Hooks />
+            },
+            {
+                path: "/clientes",
+                element: <h1>Olá, Clientes</h1>
+            },
+            {
+                path: "/produtos",
+                element: <h1>Olá produtos</h1>
             },
            
         ]
