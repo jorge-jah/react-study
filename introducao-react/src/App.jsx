@@ -1,6 +1,6 @@
 import { RouterProvider } from "react-router-dom";
-import { Header } from "./components/Header";
-import { Sidebar } from "./components/Sidebar";
+// import { Header } from "./components/layout/main/Header";
+// import { Sidebar } from "./components/Sidebar";
 import { routes } from "./routes";
 
 export default function App() {

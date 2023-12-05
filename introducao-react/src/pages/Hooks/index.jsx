@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Inputs } from "../../components/ReactHooks/useState/inputs";
+import { Inputs } from "../../components/pages/ReactHooks/useState/inputs";
+import { UseEffectComponent } from "../../components/pages/ReactHooks/useEffect";
 
 export default function Hooks() {
 
@@ -56,7 +57,8 @@ export default function Hooks() {
                     <button className="px-2 py-1 border bg-sky-800 rounded text-white" onClick={handleClear}>Limpar</button>
                 </div>
             </div>
-        <Inputs/>
+        {/* <Inputs/> */}
+        <UseEffectComponent/>
         </>
     )
 }
